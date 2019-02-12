@@ -1,0 +1,16 @@
+server:
+  port: 8080
+eureka:
+  client:
+    #注册中心的地址
+    service-url:
+      defaultZone: http://www.aaa.com:10000/eureka,http://www.bbb.com:10001/eureka,http://www.ccc.com:10002/eureka
+  #修改提供者的名称显示
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: provider8080
+#微服务的名称
+spring:
+  application:
+    name: provider
+
